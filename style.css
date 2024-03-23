@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman";
+}
+html {
+  scroll-behavior: smooth;
 }
 .conteiner {
   display: flex;
@@ -16,12 +20,15 @@
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
 .header-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   text-align: center;
-  gap: 50px;
+  gap: 200px;
 }
 .header-info h1 {
   font-size: 70px;
-  color: #fff;
+  color: #e6e6e6;
   padding-bottom: 50%;
 }
 .header-info a {
@@ -29,9 +36,15 @@
   background: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   color: #fff;
   padding: 5px 5px;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 5px;
   box-shadow: 2px 1px 4px #000;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 #hero {
   display: flex;
@@ -47,9 +60,10 @@
 }
 #hero a {
   font-size: 40px;
-  color: #fff;
+  color: #ded9d9;
   text-decoration: none;
   animation: in 5s linear infinite;
+  padding-top: 20px;
 }
 @keyframes in {
   0% {
@@ -82,8 +96,21 @@
   display: flex;
   width: 250px;
   height: 250px;
-  background-color: red;
   margin: 5px;
+  flex-direction: column;
+  gap: 15px;
+}
+.libros-hijos img {
+  width: 250px;
+  height: 250px;
+}
+.libros-hijos h3 {
+  font-size: 24px;
+}
+.libros-hijos a {
+  color: #989696;
+  text-decoration: none;
+  font-size: 20px;
 }
 footer {
   display: flex;
